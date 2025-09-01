@@ -1,0 +1,163 @@
+body {
+    background: linear-gradient(90deg, black, maroon);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background 0.8s ease;
+  }
+  
+ /* Calm background with dark text */
+body.nav-open-bg {
+    background: linear-gradient(120deg, #e6e6fa, #d0e7ff); 
+    
+  }
+  
+  /* Make sure all text elements are black when nav is open */
+  body.nav-open-bg h1,
+  body.nav-open-bg h2,
+  body.nav-open-bg p,
+  body.nav-open-bg button
+  body.nav-open-bg nav {
+    color: black;
+  }
+
+  
+  /* Optional: Adjust button background for contrast */
+  body.nav-open-bg button {
+    background-color: #cbb4f0;
+  }
+  
+  body.nav-open-bg button:hover {
+    background-color: #b39ddb;
+  }
+
+
+h1{
+    color:lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;  /* or 4vw */
+    font-style: italic;
+    padding-top: 5%;
+    text-align: center;
+    padding-top: 5%;
+}
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+    color: white;
+}
+p{
+    line-height:30px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    color: whitesmoke;
+}
+.joy{
+  margin-top: -90px;
+  justify-items: left;
+  padding: 50px;
+  
+}
+
+ button{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color:lavenderblush ;
+   color: maroon;
+   padding: 17px 17px;
+}
+button:active{
+    background-color: rgb(104, 104, 192);
+    color: red;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.login{
+    margin-left: 20px;
+}
+
+/* for the image */
+.hero-section {
+  position: relative;
+  max-width: 50%;
+  text-align: center;
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  animation: fadeInContainer 1.8s ease-in;
+}
+
+.hero-section img {
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+
+.hero-section img:hover {
+  transform: scale(1.02);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 8px black;
+  animation: fadeInOutLoop 8s ease-in-out infinite;
+}
+
+@keyframes fadeInOutLoop {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+  }
+
+  footer a {
+    color: #00aaff;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+    color: darkblue;
+  }

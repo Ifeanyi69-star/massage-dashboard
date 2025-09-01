@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="Response.css">
+</head>
+<body>
+    <header>
+      <img src="images/Screenshot_20250417-015610-removebg-preview (3).png" alt="" class="logo" style="width:300px; height: 220px;">
+
+     <nav id="mysideNav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html" >Home</a>
+      <a href="About Us.html">About us</a>
+      <a href="Contact Us.html">Contact Us</a>
+      <a href="login.html">Login </a>
+      <a href="Our Services.html">Services</a>
+      <a href="Updates.html">Updates</a>
+      <a href="Schedules and Personnels.html">Schedules/Personnels</a>
+    </nav>
+
+    <span style="font-size: 30px; cursor: pointer; color:white;" onclick ="openNav()">&#9776;</span>
+    <nav>
+      <div class="joy">
+      <section>
+        <a href="signup.html"><button>Sign up</button></a>
+    </section>
+  </div>
+    </nav>
+    </header>
+    
+       <section>
+        <div class="hero-section">
+       <img src="images/istockphoto-1312080120-640_adpp_is-ezgif.com-gif-maker.gif" alt="Spa GIF">
+         <div class="overlay-text">Welcome to Bliss</div>
+        </div>
+        
+        <div>
+           <h1>Welcome To Joy's House Of Bliss</h1>
+           <h2>Description</h2>
+           <p>
+            Are you looking to escape the daily hustle, step away from constant responsibilities, and immerse yourself in peace and tranquility? 
+            At Joy’s House of Bliss, we offer a soothing sanctuary where your mind, body, and spirit can truly rest and rejuvenate.
+          </p>
+        
+          <p>
+            Join us on a luxurious wellness journey, where stress melts away and you’re embraced by calm, healing hands. 
+            Our team of certified therapists and wellness experts are committed to providing exceptional care tailored to your unique needs, 
+            whether you’re recovering from tension, burnout, or simply seeking a moment of serenity.
+          </p>
+        
+          <p>
+            From full-body relaxation treatments to customized skincare therapies and grooming services, every detail is designed with your comfort in mind. 
+            Our tranquil environment, calming aromas, and peaceful ambiance ensure that your experience will be nothing short of transformative.
+          </p>
+        
+          <p>
+            So what are you waiting for? Take that well-deserved break, clear your schedule, and let us pamper you into total bliss. 
+            At Joy's House of Bliss, your well-being is our priority—and your peace is only a session away.
+          </p>
+         </div>
+       </section>
+      
+
+
+
+       <footer>
+        &copy; 2025 Joy's House Of Bliss❤️❤️ | 
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>|
+        <a href="index.html">Home</a>
+      </footer>
+    
+
+
+       <script>
+        function openNav() {
+          document.getElementById("mysideNav").style.width = "250px";
+          document.body.classList.add("nav-open-bg");
+        }
+      
+        function closeNav() {
+          document.getElementById("mysideNav").style.width = "0";
+          document.body.classList.remove("nav-open-bg");
+        }
+
+
+
+
+  // Save audio state before page unload
+window.addEventListener('beforeunload', function() {
+  const audio = document.getElementById('bg-music');
+  localStorage.setItem('audioCurrentTime', audio.currentTime);
+  localStorage.setItem('audioIsPlaying', !audio.paused);
+});
+
+// On page load
+window.addEventListener('load', function() {
+  const audio = document.getElementById('bg-music');
+  const savedTime = localStorage.getItem('audioCurrentTime');
+  const wasPlaying = localStorage.getItem('audioIsPlaying') === 'true';
+  
+  if (savedTime) {
+    audio.currentTime = parseFloat(savedTime);
+  }
+  if (wasPlaying) {
+    audio.play().catch(e => console.log("Autoplay prevented:", e));
+  }
+});
+      </script>
+
+   <audio id="bg-music" src="images/background-music-soft-piano-334995.mp3" autoplay loop></audio>
+     
+        
+
+        
+</body>
+</html>
